@@ -15,10 +15,19 @@
         "@nuxt/typescript-runtime": "^2.0.0",
         "@nuxtjs/axios": "^5.12.2",
         "@nuxtjs/pwa": "^3.0.2",
-        "bootstrap": "^4.5.2",
+        "bootstrap": "^4.5.3",
         "bootstrap-vue": "^2.17.3",
+        "codemirror": "^5.58.3",
         "core-js": "^3.6.5",
-        "nuxt": "^2.14.6"
+        "dedent": "^0.7.0",
+        "jquery": "^3.5.1",
+        "nuxt": "^2.14.6",
+        "popper.js": "^1.16.1",
+        "vue-codemirror": "^4.0.6",
+        "vue-prism-editor": "^1.2.2",
+        "vue-session": "^1.0.0",
+        "vue2-ace-editor": "^0.0.15",
+        "vuejs-ace-editor": "^1.0.1"
     },
     "devDependencies": {
         "@nuxt/types": "^2.14.6",

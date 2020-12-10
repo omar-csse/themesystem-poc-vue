@@ -18,18 +18,43 @@ export default {
                 content: ''
             }
         ],
+        script: [{
+                src: '/jquery-3.5.1.slim.min.js'
+            },
+            {
+                src: '/popper.min.js'
+            },
+            {
+                src: '/bootstrap.min.js'
+            }
+        ],
         link: [{
-            rel: 'icon',
-            type: 'image/x-icon',
-            href: '/favicon.ico'
-        }]
+                rel: 'icon',
+                type: 'image/x-icon',
+                href: '/favicon.ico'
+            },
+            {
+                rel: 'stylesheet',
+                href: '/bootstrap.min.css'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'codemirror/lib/codemirror.css'
+            }
+        ]
     },
 
     // Global CSS (https://go.nuxtjs.dev/config-css)
-    css: [],
+    css: [
+        'codemirror/lib/codemirror.css',
+        'codemirror/theme/base16-dark.css',
+    ],
 
     // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-    plugins: [],
+    plugins: [{
+        src: '~plugins/nuxt-codemirror-plugin',
+        ssr: false
+    }],
 
     // Auto import components (https://go.nuxtjs.dev/config-components)
     components: true,
